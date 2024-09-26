@@ -1,8 +1,7 @@
 
 
-.italic {font-style: italic;}
-
-.tab {padding-left: 15px;}
+.italic {font-style: italic}
+.tab {padding-left: 15px}
 
 mark {background-color: inherit}
 
@@ -82,9 +81,7 @@ header #title h2 {
     margin: 0;
 }
 
-header mark {
-    color: #729fcf;
-}
+header mark {color: #729fcf}
 
 nav {
     display: flex;
@@ -98,6 +95,13 @@ main {
 
     flex: 1;
     padding: 2% 10% 2% 10%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+main > section {
+    margin-bottom: 50px;
 }
 
 #presentation {
@@ -110,30 +114,26 @@ main {
     background-color: #f0f5fa;
 }
 
-#presentation-menu {
-    display: flex;
-}
+#presentation-menu {display: flex}
 
 #presentation-menu div {
     flex: 1;
+
     text-align: center;
+
+    background-color: #445f7c;
+
     padding: 10px 10px 10px 10px;
 }
 
-#presentation-menu label {
-    color: #f0f5fa;
-}
+#presentation-menu label {color: #f0f5fa}
 
 #button-studies{border-top-left-radius: 15px}
 #button-other{border-top-right-radius: 15px}
 
-.presentation-section {
-    padding: 5px 50px 5px 50px;
-}
+#presentation > section {padding: 5px 50px 5px 50px;}
 
-#presentation h3 {
-    color: #729fcf;
-}
+#presentation h3 {color: #729fcf}
 
 #presentation h4 {
     font-weight: normal;
@@ -141,37 +141,86 @@ main {
     color: #729fcf;
 }
 
-#presentation mark {
-    font-weight: bold;
-}
+#presentation mark {font-weight: bold}
 
-@media screen and (max-width: 767px) {
-
-}
-
-@media screen and (min-width: 768px) {
-
-}
-
-@keyframes hide-sidebar {
-    from {
-        position: relative;
-        left: 0
-    }
-    to {
-        position: relative;
-        left: -120%
-    }
-}
+#presentation-menu div:hover {background-color: #2d3f52}
+#presentation-menu div:has(input:checked) {background-color: #f0f5fa}
+#presentation-menu input:checked ~ label {color: #445f7c}
 
 #projects {display: none}
 #experiences {display: none}
 #other {display: none}
 
-#presentation-menu label:hover {color: #d4e2f0}
-#presentation-menu div:has(input:checked) {background-color: #f0f5fa}
-#presentation-menu div:has(input) {background-color: #445f7c}
-#presentation-menu input:checked ~ label {color: #445f7c}
+#contact fieldset {
+    border: 3px solid #445f7c;
+    border-radius: 20px;
+    background-color: #f0f5fa;
+}
+#contact fieldset legend {
+    color: #f0f5fa;
+    font-weight: bold;
+    font-size: 2em;
+
+    background-color: #445f7c;
+
+    border-radius: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#contact form {
+    display: grid;
+    grid-gap: 15px;;
+    padding-top: 20px;
+}
+
+#contact label {
+    color: #729fcf;
+    position: relative;
+    bottom: 55%;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.contact-input {
+
+    width: 100%;
+
+    border: 0;
+    border-bottom: 1px solid #729fcf;
+
+    background-color: #f0f5fa;
+}
+
+.contact-input:focus {outline:none!important}
+
+.contact-input:focus + label {animation-name: contact-label-move-up}
+.contact-input:not(:focus) + label {animation-name: contact-label-move-down}
+.contact-input:not(:placeholder-shown) + label {animation-name: contact-label-move-up;}
+
+@keyframes contact-label-move-up {
+    from {position: relative; bottom: 55%}
+    to {position: relative; bottom: 100%}
+}
+
+@keyframes contact-label-move-down {
+    from {position: relative; bottom: 100%}
+    to {position: relative; bottom: 55%}
+}
+
+#contact-name {grid-row: 1; grid-column: 1}
+#contact-mail {grid-row: 1; grid-column: 2}
+#contact-msg {grid-row: 2; grid-column-start: 1; grid-column-end: 3}
+
+/*TODO*/
+@keyframes hide-sidebar {
+    from {position: relative; left: 0}
+    to {position: relative; left: -120%}
+}
+
+/*TODO*/
+@media screen and (max-width: 767px) {}
+@media screen and (min-width: 768px) {}
 
 
 
