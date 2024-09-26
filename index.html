@@ -69,125 +69,155 @@
 
             <main>
 
-                <article id="studies">
+                <section id="presentation">
 
-                    <h3>Études</h3>
+                    <div id="presentation-menu">
 
-                    <section>
-                        <h4>2024 - 2027</h4>
-                        <p class="tab"><b>Formation Master « MSC PRO »</b></p>
-                        <p class="tab"><mark>Titre RNP bac+5 Architecte Logiciel en apprentissage</mark></p>
-                        <p class="tab">EPITECH – 44100 Nantes</p>
-                    </section>
+                        <div id="button-studies">
+                            <input type="radio" id="input-studies" name="presentation-menu" value="studies" checked hidden/>
+                            <label for="input-studies">Études</label>
+                        </div>
 
-                    <section>
-                        <h4>2017 - 2020</h4>
-                        <p class="tab"><b>Obtention du titre RNCP “TESRA” Bac+3 option cinéma</b></p>
-                        <p class="tab">ESRA Bretagne - 35000 Rennes</p>
-                    </section>
+                        <div id="button-projects">
+                            <input type="radio" id="input-projects" name="presentation-menu" value="projects" hidden/>
+                            <label for="input-projects">Projets de Développement</label>
+                        </div>
 
-                    <section>
-                        <h4>Avant 2017</h4>
-                        <p class="tab"><b>Obtention du BAC mention Bien</b></p>
-                        <p class="tab">Filière Scientifique, option Informatique et Science du Numérique</p>
-                    </section>
+                        <div id="button-experiences">
+                            <input type="radio" id="input-experiences" name="presentation-menu" value="experiences" hidden/>
+                            <label for="input-experiences">Expériences Professionnelles</label>
+                        </div>
 
-                </article>
+                        <div id="button-other">
+                            <input type="radio" id="input-other" name="presentation-menu" value="other" hidden/>
+                            <label for="input-other">Autres Expériences</label>
+                        </div>
 
-                <article id="Projects">
+                    </div>
 
-                    <h3>Projets de Développement</h3>
+                    <section id="studies" class="presentation-section">
 
-                    <section>
-                        <h4>« eMusicPlayer »</h4>
+                        <h3>Études</h3>
 
-                        <p><b>Logiciel de diffusion automatique de musique contrôlable à distance, commandé par une entreprise d’événementiel</b></p>
+                        <section>
+                            <h4>2024 - 2027</h4>
+                            <p class="tab"><b>Formation Master « MSC PRO »</b></p>
+                            <p class="tab"><mark>Titre RNP bac+5 Architecte Logiciel en apprentissage</mark></p>
+                            <p class="tab italic">EPITECH – 44100 Nantes</p>
+                        </section>
 
-                        <ul>
-                            <li>Programmé en Python</li>
-                            <li>Système de planning et horloge pour la diffusion automatique</li>
-                            <li>Réseau Socket Contrôleur / Serveur / Client pour le contrôle à distance</li>
-                            <li>Interface graphique ("Tkinter")</li>
-                            <li>Gestion de fichier / Diffusion de musique</li>
-                            <li>Multi-threading</li>
-                        </ul>
-                    </section>
+                        <section>
+                            <h4>2017 - 2020</h4>
+                            <p class="tab"><b>Obtention du titre RNCP “TESRA” Bac+3 option cinéma</b></p>
+                            <p class="tab italic">ESRA Bretagne - 35000 Rennes</p>
+                        </section>
 
-                    <section>
-                        <h4>« MC Command Editor »</h4>
-
-                        <p><b>Application "d’Environnement de Développement" pour un langage de type fonctionnel ("MCFunction")</b></p>
-
-                        <ul>
-                            <li>Analyseur lexicale et syntaxique (Lexer / Parser)</li>
-                            <li>Interface graphique : Éditeur de texte avec style et débogage</li>
-                            <li>Gestion de fichier / projet, avec explorer intégré</li>
-                        </ul>
-                    </section>
-
-                    <section>
-                        <h4>Sans Nom</h4>
-
-                        <p><b>Logiciel pour récupérer les réponses des participants à un Blind-Test en diffusion live sur YouTube et comptabiliser les points</b></p>
-                        <ul>
-                            <li>Analyseur orthographique (Ignorer les fautes de frappes)</li>
-                            <li>Utilisation de l’API YouTube pour récupérer les messages tchat</li>
-                            <li>Interface graphique retransmise au présentateur</li>
-                        </ul>
-                    </section>
-
-                </article>
-
-                <article id="Experiences">
-
-                    <h3>Expériences professionnelles</h3>
-
-                    <section>
-                        <h4>Mai 2022 – Juillet 2024</h4>
-                        <p><b>HyperU Savenay</b> (2 ans)</p>
-                        <p>Employé commercial</p>
-                    </section>
-
-                    <section>
-                        <h4>Novembre 2020 – Février 2021</h4>
-                        <p><b>McDonald’s (RRS) Savenay</b> (4 mois)</p>
-                        <p>Employé polyvalent</p>
-                    </section>
-
-                    <section>
-                        <h4>Fin 2020</h4>
-                        <p><b>Picard Ploermël</b> (2 mois)</p>
-                        <p>Caisse – Mise en Rayon</p>
-                    </section>
-
-                    <section>
-                        <h4>Avril 2020</h4>
-                        <p><b>P.E.P (Cocotine) Ploermël</b> (2 semaines)</p>
-                        <p>Ouvrier sur chaîne de production Agro-alimentaire</p>
-                    </section>
-
-                </article>
-
-                <article id="other">
-
-                    <h3>Autres Expériences</h3>
-
-                    <section>
-
-                        <h4>« Sur les Ondes » (2021) – Auteur Réalisateur</h4>
-
-                        <mark>Court-métrage à suspens auto-produit</mark>
-
-                        <ul>
-                            <li>Recherche de financement (6 000 €)</li>
-                            <li>Recrutement et management d’une équipe de 30 personnes</li>
-                            <li>Location de matériel</li>
-                            <li>Retro-planning</li>
-                        </ul>
+                        <section>
+                            <h4>Avant 2017</h4>
+                            <p class="tab"><b>Obtention du BAC mention Bien</b></p>
+                            <p class="tab italic">Filière Scientifique, option Informatique et Science du Numérique</p>
+                        </section>
 
                     </section>
 
-                </article>
+                    <article id="projects" class="presentation-section">
+
+                        <h3>Projets de Développement</h3>
+
+                        <section>
+                            <h4>« eMusicPlayer »</h4>
+
+                            <p class="tab"><b>Logiciel de diffusion automatique de musique contrôlable à distance, commandé par une entreprise d’événementiel</b></p>
+
+                            <ul class="tab">
+                                <li>Programmé en Python</li>
+                                <li>Système de planning et horloge pour la diffusion automatique</li>
+                                <li>Réseau Socket Contrôleur / Serveur / Client pour le contrôle à distance</li>
+                                <li>Interface graphique ("Tkinter")</li>
+                                <li>Gestion de fichier / Diffusion de musique</li>
+                                <li>Multi-threading</li>
+                            </ul>
+                        </section>
+
+                        <section>
+                            <h4>« MC Command Editor »</h4>
+
+                            <p class="tab"><b>Application "d’Environnement de Développement" pour un langage de type fonctionnel ("MCFunction")</b></p>
+
+                            <ul class="tab">
+                                <li>Analyseur lexicale et syntaxique (Lexer / Parser)</li>
+                                <li>Interface graphique : Éditeur de texte avec style et débogage</li>
+                                <li>Gestion de fichier / projet, avec explorer intégré</li>
+                            </ul>
+                        </section>
+
+                        <section>
+                            <h4>Sans Nom</h4>
+
+                            <p class="tab"><b>Logiciel pour récupérer les réponses des participants à un Blind-Test en diffusion live sur YouTube et comptabiliser les points</b></p>
+                            <ul class="tab">
+                                <li>Analyseur orthographique (Ignorer les fautes de frappes)</li>
+                                <li>Utilisation de l’API YouTube pour récupérer les messages tchat</li>
+                                <li>Interface graphique retransmise au présentateur</li>
+                            </ul>
+                        </section>
+
+                    </article>
+
+                    <article id="experiences" class="presentation-section">
+
+                        <h3>Expériences professionnelles</h3>
+
+                        <section>
+                            <h4>Mai 2022 – Juillet 2024</h4>
+                            <p class="tab"><b>HyperU Savenay</b> (2 ans)</p>
+                            <p class="tab italic">Employé commercial</p>
+                        </section>
+
+                        <section>
+                            <h4>Novembre 2020 – Février 2021</h4>
+                            <p class="tab"><b>McDonald’s (RRS) Savenay</b> (4 mois)</p>
+                            <p class="tab italic">Employé polyvalent</p>
+                        </section>
+
+                        <section>
+                            <h4>Fin 2020</h4>
+                            <p class="tab"><b>Picard Ploermël</b> (2 mois)</p>
+                            <p class="tab italic">Caisse – Mise en Rayon</p>
+                        </section>
+
+                        <section>
+                            <h4>Avril 2020</h4>
+                            <p class="tab"><b>P.E.P (Cocotine) Ploermël</b> (2 semaines)</p>
+                            <p class="tab italic">Ouvrier sur chaîne de production Agro-alimentaire</p>
+                        </section>
+
+                    </article>
+
+                    <article id="other" class="presentation-section">
+
+                        <h3>Autres Expériences</h3>
+
+                        <section>
+
+                            <h4>« Sur les Ondes » (2021) – Auteur Réalisateur</h4>
+
+                            <mark class="tab">Court-métrage à suspens auto-produit</mark>
+
+                            <ul>
+                                <li>Recherche de financement (6 000 €)</li>
+                                <li>Recrutement et management d’une équipe de 30 personnes</li>
+                                <li>Location de matériel</li>
+                                <li>Retro-planning</li>
+                            </ul>
+
+                        </section>
+
+                    </article>
+
+                    <script src="menu.js"></script>
+
+                </section>
 
             </main>
 

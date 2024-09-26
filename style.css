@@ -1,13 +1,21 @@
 
+
+.italic {font-style: italic;}
+
+.tab {padding-left: 15px;}
+
 mark {background-color: inherit}
 
 body {
     font-family: "Montserrat", system-ui;
+    margin: 0;
 }
 
 #content {
     display: grid;
     grid-template-columns: 20% auto;
+
+    border: 10px solid #f0f5fa;
 }
 
 #sidebar {
@@ -21,6 +29,8 @@ body {
     background-color: #729fcf;
     color: white;
 
+    border-right: 10px solid #f0f5fa;
+
     /*animation-name: hide-sidebar;*/
     /*animation-duration: 3s;*/
     /*animation-fill-mode: forwards*/
@@ -33,24 +43,43 @@ body {
 }
 
 #profil-pic {
+
     max-width: 90%;
+
+    display: block;
     margin-left: auto;
     margin-right: auto;
+
     border-radius: 50%;
-    border: 3px solid #445f7c;
+
+    border: 5px solid #f0f5fa;
+    box-shadow: 5px 5px 15px #445f7c;
 }
 
 header {
     grid-column: 2;
     grid-row: 1;
+
     display: flex;
+
     padding: 10px;
-    background-color: #f0f5fa
+
+    background-color: #f0f5fa;
 }
 
 header #title {
     margin: auto;
     text-align: center
+}
+
+header #title h1 {
+    font-size: 5em;
+    margin: 0;
+}
+
+header #title h2 {
+    font-size: 3em;
+    margin: 0;
 }
 
 header mark {
@@ -68,11 +97,10 @@ main {
     grid-row: 2;
 
     flex: 1;
-    padding: 10px 15% 10px 15%;
+    padding: 2% 10% 2% 10%;
 }
 
-main article {
-    padding: 10px;
+#presentation {
 
     border: 3px solid #445f7c;
     border-radius: 20px;
@@ -82,20 +110,39 @@ main article {
     background-color: #f0f5fa;
 }
 
-main article h3 {
+#presentation-menu {
+    display: flex;
+}
+
+#presentation-menu div {
+    flex: 1;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+}
+
+#presentation-menu label {
+    color: #f0f5fa;
+}
+
+#button-studies{border-top-left-radius: 15px}
+#button-other{border-top-right-radius: 15px}
+
+.presentation-section {
+    padding: 5px 50px 5px 50px;
+}
+
+#presentation h3 {
     color: #729fcf;
 }
 
-main #studies h4 {
+#presentation h4 {
     font-weight: normal;
+    font-size: 18px;
+    color: #729fcf;
 }
 
-main section {
-    padding-top: 5px;
-}
-
-.tab {
-    padding-left: 15px;
+#presentation mark {
+    font-weight: bold;
 }
 
 @media screen and (max-width: 767px) {
@@ -116,3 +163,16 @@ main section {
         left: -120%
     }
 }
+
+#projects {display: none}
+#experiences {display: none}
+#other {display: none}
+
+#presentation-menu label:hover {color: #d4e2f0}
+#presentation-menu div:has(input:checked) {background-color: #f0f5fa}
+#presentation-menu div:has(input) {background-color: #445f7c}
+#presentation-menu input:checked ~ label {color: #445f7c}
+
+
+
+
