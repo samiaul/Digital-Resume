@@ -19,7 +19,7 @@
 
                 <div id="scrolling-container">
 
-                    <img id="profil-pic" src="resources/profilepic.jpg" alt="Profil Picture">
+                    <img id="profil-pic" src="media/profilepic.jpg" alt="Profil Picture">
 
                     <section id="resume">
                         <p>D’abord attiré par le cinéma, j’ai décidé de me réorienter à la suite d’un bac+3 dans ce domaine.</p>
@@ -30,9 +30,9 @@
                     <section id="details">
                         <h3>Détails personnels</h3>
                         <ul>
-                            <!--TODO ICON--> <li>18 février 2000</li>
-                            <!--TODO ICON--> <li>La Chapelle-Launay (44260)</li>
-                            <!--TODO ICON--> <li>Permis B</li>
+                            <li id="birthdate">18 février 2000</li>
+                            <li id="address">La Chapelle-Launay (44260)</li>
+                            <li id="licence">Permis B</li>
                         </ul>
                         <p>Anglais – niveau B1</p>
                     </section>
@@ -59,61 +59,60 @@
                 </div>
 
                 <nav>
-                    <!--TODO NAV-->
-                    <a>Présentation</a>
-                    <a>Projets</a>
-                    <a>Contact</a>
+                    <menu>
+                        <li><a href="#profil">Profil</a></li>
+                        <li><a href="#dev-projects">Projets</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </menu>
                 </nav>
 
             </header>
 
             <main>
 
-                <section id="presentation">
+                <section id="profil">
 
-                    <div id="presentation-menu">
+                    <div id="profil-menu">
 
-                        <div id="button-studies">
-                            <input type="radio" id="input-studies" name="presentation-menu" value="studies" checked hidden/>
-                            <label for="input-studies">Études</label>
+                        <div>
+                            <input type="radio" id="input-studies" name="profil-menu" value="studies" checked hidden/>
+                            <label for="input-studies" id="label-studies">Études</label>
                         </div>
 
-                        <div id="button-projects">
-                            <input type="radio" id="input-projects" name="presentation-menu" value="projects" hidden/>
-                            <label for="input-projects">Projets de Développement</label>
+                        <div>
+                            <input type="radio" id="input-projects" name="profil-menu" value="projects" hidden/>
+                            <label for="input-projects" id="label-projects">Projets de Développement</label>
                         </div>
 
-                        <div id="button-experiences">
-                            <input type="radio" id="input-experiences" name="presentation-menu" value="experiences" hidden/>
-                            <label for="input-experiences">Expériences Professionnelles</label>
+                        <div>
+                            <input type="radio" id="input-experiences" name="profil-menu" value="experiences" hidden/>
+                            <label for="input-experiences" id="label-experiences">Expériences Professionnelles</label>
                         </div>
 
-                        <div id="button-other">
-                            <input type="radio" id="input-other" name="presentation-menu" value="other" hidden/>
-                            <label for="input-other">Autres Expériences</label>
+                        <div>
+                            <input type="radio" id="input-other" name="profil-menu" value="other" hidden/>
+                            <label for="input-other" id="label-other">Autres Expériences</label>
                         </div>
 
                     </div>
 
                     <section id="studies">
 
-                        <h3>Études</h3>
-
                         <section>
-                            <h4>2024 - 2027</h4>
+                            <h3>2024 - 2027</h3>
                             <p class="tab"><b>Formation Master « MSC PRO »</b></p>
                             <p class="tab"><mark>Titre RNP bac+5 Architecte Logiciel en apprentissage</mark></p>
                             <p class="tab italic">EPITECH – 44100 Nantes</p>
                         </section>
 
                         <section>
-                            <h4>2017 - 2020</h4>
+                            <h3>2017 - 2020</h3>
                             <p class="tab"><b>Obtention du titre RNCP “TESRA” Bac+3 option cinéma</b></p>
                             <p class="tab italic">ESRA Bretagne - 35000 Rennes</p>
                         </section>
 
                         <section>
-                            <h4>Avant 2017</h4>
+                            <h3>Avant 2017</h3>
                             <p class="tab"><b>Obtention du BAC mention Bien</b></p>
                             <p class="tab italic">Filière Scientifique, option Informatique et Science du Numérique</p>
                         </section>
@@ -122,10 +121,8 @@
 
                     <section id="projects">
 
-                        <h3>Projets de Développement</h3>
-
                         <section>
-                            <h4>« eMusicPlayer »</h4>
+                            <h3>« eMusicPlayer »</h3>
 
                             <p class="tab"><b>Logiciel de diffusion automatique de musique contrôlable à distance, commandé par une entreprise d’événementiel</b></p>
 
@@ -140,7 +137,7 @@
                         </section>
 
                         <section>
-                            <h4>« MC Command Editor »</h4>
+                            <h3>« MC Command Editor »</h3>
 
                             <p class="tab"><b>Application "d’Environnement de Développement" pour un langage de type fonctionnel ("MCFunction")</b></p>
 
@@ -152,7 +149,7 @@
                         </section>
 
                         <section>
-                            <h4>Sans Nom</h4>
+                            <h3 class="italic">Sans Nom</h3>
 
                             <p class="tab"><b>Logiciel pour récupérer les réponses des participants à un Blind-Test en diffusion live sur YouTube et comptabiliser les points</b></p>
                             <ul class="tab">
@@ -166,10 +163,8 @@
 
                     <section id="experiences">
 
-                        <h3>Expériences professionnelles</h3>
-
                         <section>
-                            <h4>Mai 2022 – Juillet 2024</h4>
+                            <h3>Mai 2022 – Juillet 2024</h3>
                             <p class="tab"><b>HyperU Savenay</b> (2 ans)</p>
                             <p class="tab italic">Employé commercial</p>
                         </section>
@@ -181,13 +176,13 @@
                         </section>
 
                         <section>
-                            <h4>Fin 2020</h4>
+                            <h3>Fin 2020</h3>
                             <p class="tab"><b>Picard Ploermël</b> (2 mois)</p>
                             <p class="tab italic">Caisse – Mise en Rayon</p>
                         </section>
 
                         <section>
-                            <h4>Avril 2020</h4>
+                            <h3>Avril 2020</h3>
                             <p class="tab"><b>P.E.P (Cocotine) Ploermël</b> (2 semaines)</p>
                             <p class="tab italic">Ouvrier sur chaîne de production Agro-alimentaire</p>
                         </section>
@@ -196,11 +191,9 @@
 
                     <section id="other">
 
-                        <h3>Autres Expériences</h3>
-
                         <section>
 
-                            <h4>« Sur les Ondes » (2021) – Auteur Réalisateur</h4>
+                            <h3>« Sur les Ondes » (2021) – Auteur Réalisateur</h3>
 
                             <mark class="tab">Court-métrage à suspens auto-produit</mark>
 
