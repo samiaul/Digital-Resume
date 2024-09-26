@@ -1,44 +1,118 @@
 
-header {
-    background-color: lightskyblue;
+mark {background-color: inherit}
+
+body {
+    font-family: "Montserrat", system-ui;
 }
 
 #content {
-    display: flex;
+    display: grid;
+    grid-template-columns: 20% auto;
 }
 
 #sidebar {
-    background-color: indianred;
-    width: 20%;
+
+    grid-column: 1;
+    grid-row: 1;
+    grid-row-end: 3;
+
+    padding: 5%;
+
+    background-color: #729fcf;
+    color: white;
+
+    /*animation-name: hide-sidebar;*/
+    /*animation-duration: 3s;*/
+    /*animation-fill-mode: forwards*/
 }
 
-#sidebar .container {
+#scrolling-container {
     position: sticky;
     top: 0;
+    padding-top: 5%;
+}
+
+#profil-pic {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    border: 3px solid #445f7c;
+}
+
+header {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    padding: 10px;
+    background-color: #f0f5fa
+}
+
+header #title {
+    margin: auto;
+    text-align: center
+}
+
+header mark {
+    color: #729fcf;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
 }
 
 main {
-    background-color: darkseagreen;
+
+    grid-column: 2;
+    grid-row: 2;
 
     flex: 1;
+    padding: 10px 15% 10px 15%;
 }
 
+main article {
+    padding: 10px;
 
+    border: 3px solid #445f7c;
+    border-radius: 20px;
 
+    box-shadow: 5px 5px 7px #445f7c;
 
+    background-color: #f0f5fa;
+}
 
+main article h3 {
+    color: #729fcf;
+}
 
+main #studies h4 {
+    font-weight: normal;
+}
 
+main section {
+    padding-top: 5px;
+}
 
+.tab {
+    padding-left: 15px;
+}
 
 @media screen and (max-width: 767px) {
 
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) {
 
 }
 
-@media screen and (min-width: 1024px) {
-
+@keyframes hide-sidebar {
+    from {
+        position: relative;
+        left: 0
+    }
+    to {
+        position: relative;
+        left: -120%
+    }
 }

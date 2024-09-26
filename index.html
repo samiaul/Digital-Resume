@@ -4,34 +4,22 @@
 
     <head>
         <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
         <title>Title</title>
     </head>
 
     <body>
 
-        <header>
-
-            <div id="title">
-                <h1>Samuel GAUTHIER</h1>
-                <h2>Développeur Full-Stack à Nantes</h2>
-            </div>
-
-            <nav>
-                <!--TODO NAV-->
-                <a>Projects</a>
-            </nav>
-
-        </header>
-
         <div id="content">
 
             <aside id="sidebar">
 
-                <div class="container">
+                <div id="scrolling-container">
 
-                    <!--TODO PICTURE-->
-                    <img src="">
+                    <img id="profil-pic" src="resources/profilepic.jpg" alt="Profil Picture">
 
                     <section id="resume">
                         <p>D’abord attiré par le cinéma, j’ai décidé de me réorienter à la suite d’un bac+3 dans ce domaine.</p>
@@ -43,9 +31,6 @@
                         <h3>Détails personnels</h3>
                         <ul>
                             <!--TODO ICON--> <li>18 février 2000</li>
-                            <!--TODO ICON--> <li>samiaul.56@gmail.com</li>
-                            <!--TODO ICON--> <li>06 59 54 87 98</li>
-                            <!--TODO ICON--> <li>42 Lieu-dit La Feuillée</li>
                             <!--TODO ICON--> <li>La Chapelle-Launay (44260)</li>
                             <!--TODO ICON--> <li>Permis B</li>
                         </ul>
@@ -66,29 +51,45 @@
 
             </aside>
 
+            <header id="header">
+
+                <div id="title">
+                    <h1>Samuel <mark>GAUTHIER</mark></h1>
+                    <h2><mark>Développeur Full-Stack</mark> à Nantes</h2>
+                </div>
+
+                <nav>
+                    <!--TODO NAV-->
+                    <a>Présentation</a>
+                    <a>Projets</a>
+                    <a>Contact</a>
+                </nav>
+
+            </header>
+
             <main>
 
-                <article id="Studies">
+                <article id="studies">
 
                     <h3>Études</h3>
 
                     <section>
                         <h4>2024 - 2027</h4>
-                        <p><b>Formation Master « MSC PRO »</b></p>
-                        <p><mark>Titre RNP bac+5 Architecte Logiciel en apprentissage</mark></p>
-                        <p>EPITECH – 44100 Nantes</p>
+                        <p class="tab"><b>Formation Master « MSC PRO »</b></p>
+                        <p class="tab"><mark>Titre RNP bac+5 Architecte Logiciel en apprentissage</mark></p>
+                        <p class="tab">EPITECH – 44100 Nantes</p>
                     </section>
 
                     <section>
                         <h4>2017 - 2020</h4>
-                        <p><mark>Obtention du titre RNCP “TESRA” Bac+3 option cinéma</mark></p>
-                        <p>ESRA Bretagne - 35000 Rennes</p>
+                        <p class="tab"><b>Obtention du titre RNCP “TESRA” Bac+3 option cinéma</b></p>
+                        <p class="tab">ESRA Bretagne - 35000 Rennes</p>
                     </section>
 
                     <section>
                         <h4>Avant 2017</h4>
-                        <p><b>Obtention du BAC mention Bien</b></p>
-                        <p>Filière Scientifique, option Informatique et Science du Numérique</p>
+                        <p class="tab"><b>Obtention du BAC mention Bien</b></p>
+                        <p class="tab">Filière Scientifique, option Informatique et Science du Numérique</p>
                     </section>
 
                 </article>
@@ -100,7 +101,7 @@
                     <section>
                         <h4>« eMusicPlayer »</h4>
 
-                        <p>Logiciel de diffusion automatique de musique contrôlable à distance, commandé par une entreprise d’événementiel</p>
+                        <p><b>Logiciel de diffusion automatique de musique contrôlable à distance, commandé par une entreprise d’événementiel<b></p>
 
                         <ul>
                             <li>Programmé en Python</li>
