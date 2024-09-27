@@ -37,6 +37,7 @@ const sidebar_button = document.getElementById('sidebar-button-input');
 const sidebar_show = document.getElementById('show');
 const sidebar_hide = document.getElementById('hide');
 const sidebar = document.getElementById('sidebar');
+const content = document.getElementById('body');
 
 function toggleAnimation(reverse) {
 
@@ -50,8 +51,13 @@ function toggleAnimation(reverse) {
 
     void sidebar.offsetWidth;
 
-    if (reverse) {sidebar.classList.add('reversed'); sidebar_hide.style.display = 'block'}
-    else {sidebar.classList.add('animated'); sidebar_show.style.display = 'block'}
+    if (reverse) {
+        sidebar.classList.add('reversed');
+        sidebar_hide.style.display = 'block'
+    }
+    else {
+        sidebar.classList.add('animated');
+        sidebar_show.style.display = 'block'}
 }
 
 sidebar_button.addEventListener('change', function () {
