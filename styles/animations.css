@@ -1,10 +1,10 @@
 
-.animated {animation: hide-sidebar 2s forwards;}
-.reversed {animation: hide-sidebar 2s reverse;}
+.animated {animation: hide-sidebar 1.5s forwards;}
+.reversed {animation: hide-sidebar 1.5s reverse;}
 
 @keyframes hide-sidebar {
     from {position: relative; left: 0}
-    to {position: relative; left: -20%}
+    to {position: absolute; left: -21%}
 }
 
 @keyframes buzz {

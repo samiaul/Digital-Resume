@@ -2,6 +2,8 @@
 
 #sidebar {
 
+    flex-basis: 0 100%;
+
     width: 20%;
 
     background: linear-gradient(0deg, #2d3f52 0%, #729fcf 15%);
