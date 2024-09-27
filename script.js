@@ -40,6 +40,9 @@ const sidebar = document.getElementById('sidebar');
 
 function toggleAnimation(reverse) {
 
+    if (sidebar.classList.contains('animated') && !reverse) {return}
+    if (sidebar.classList.contains('reversed') && reverse) {return}
+
     sidebar.classList.remove('animated', 'reversed');
 
     sidebar_hide.style.display = 'none';
@@ -57,7 +60,9 @@ sidebar_button.addEventListener('change', function () {
 
 // Hide when screen is small
 
-function handleSmallScreen(e) {toggleAnimation(!e.matches)}
+function handleSmallScreen(e) {
+    if (e.matches) {sidebar_button.checked = false; toggleAnimation(false)}
+}
 
 const mediaQuery = window.matchMedia('(max-width: 600px)');
 
