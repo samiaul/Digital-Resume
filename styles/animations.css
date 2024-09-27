@@ -24,3 +24,11 @@
     from {position: relative; bottom: 100%}
     to {position: relative; bottom: 55%}
 }
+
+@media screen and (max-width: 360px) {
+
+    @keyframes hide-sidebar {
+        from {position: absolute; left: 0}
+        to {position: absolute; left: -78%}
+    }
+}
