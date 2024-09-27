@@ -150,9 +150,28 @@ main > section {
 
 #profil mark {font-weight: bold}
 
-#projects {display: none}
 #experiences {display: none}
 #other {display: none}
+
+#dev-projects fieldset {
+    border: 3px solid #445f7c;
+    border-radius: 20px;
+    background-color: #f0f5fa;
+    box-shadow: 5px 5px 7px #2d3f52;
+}
+
+#dev-projects fieldset legend {
+
+    color: #445f7c;
+    font-weight: bold;
+    font-size: 2em;
+
+    border-radius: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    text-align: center;
+}
 
 #contact fieldset {
     border: 3px solid #445f7c;

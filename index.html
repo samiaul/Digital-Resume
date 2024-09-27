@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
     <head>
         <meta charset="UTF-8">
@@ -19,6 +19,8 @@
     </head>
 
     <body>
+
+        <!--TODO Add links (github / linkedin)-->
 
         <div id="body">
 
@@ -98,11 +100,6 @@
                             </div>
 
                             <div>
-                                <input type="radio" id="input-projects" name="profil-menu" value="projects" hidden/>
-                                <label for="input-projects" id="label-projects">Projets de Développement</label>
-                            </div>
-
-                            <div>
                                 <input type="radio" id="input-experiences" name="profil-menu" value="experiences" hidden/>
                                 <label for="input-experiences" id="label-experiences">Expériences Professionnelles</label>
                             </div>
@@ -133,48 +130,6 @@
                                 <h3>Avant 2017</h3>
                                 <p class="tab"><b>Obtention du BAC mention Bien</b></p>
                                 <p class="tab italic">Filière Scientifique, option Informatique et Science du Numérique</p>
-                            </section>
-
-                        </section>
-
-                        <section id="projects">
-
-                            <section>
-                                <h3>« eMusicPlayer »</h3>
-
-                                <p class="tab"><b>Logiciel de diffusion automatique de musique contrôlable à distance, commandé par une entreprise d’événementiel</b></p>
-
-                                <ul class="tab">
-                                    <li>Programmé en Python</li>
-                                    <li>Système de planning et horloge pour la diffusion automatique</li>
-                                    <li>Réseau Socket Contrôleur / Serveur / Client pour le contrôle à distance</li>
-                                    <li>Interface graphique ("Tkinter")</li>
-                                    <li>Gestion de fichier / Diffusion de musique</li>
-                                    <li>Multi-threading</li>
-                                </ul>
-                            </section>
-
-                            <section>
-                                <h3>« MC Command Editor »</h3>
-
-                                <p class="tab"><b>Application "d’Environnement de Développement" pour un langage de type fonctionnel ("MCFunction")</b></p>
-
-                                <ul class="tab">
-                                    <li>Analyseur lexicale et syntaxique (Lexer / Parser)</li>
-                                    <li>Interface graphique : Éditeur de texte avec style et débogage</li>
-                                    <li>Gestion de fichier / projet, avec explorer intégré</li>
-                                </ul>
-                            </section>
-
-                            <section>
-                                <h3 class="italic">Sans Nom</h3>
-
-                                <p class="tab"><b>Logiciel pour récupérer les réponses des participants à un Blind-Test en diffusion live sur YouTube et comptabiliser les points</b></p>
-                                <ul class="tab">
-                                    <li>Analyseur orthographique (Ignorer les fautes de frappes)</li>
-                                    <li>Utilisation de l’API YouTube pour récupérer les messages tchat</li>
-                                    <li>Interface graphique retransmise au présentateur</li>
-                                </ul>
                             </section>
 
                         </section>
@@ -228,7 +183,53 @@
 
                     </section>
 
-                    <section id="dev-projects"><!--TODO--></section>
+                    <section id="dev-projects">
+
+                        <fieldset>
+
+                            <legend>Mes projets majeurs</legend>
+
+                            <section>
+                                <h3>« eMusicPlayer »</h3>
+
+                                <p class="tab"><b>Logiciel de diffusion automatique de musique contrôlable à distance, commandé par une entreprise d’événementiel</b></p>
+
+                                <ul class="tab">
+                                    <li>Programmé en Python</li>
+                                    <li>Système de planning et horloge pour la diffusion automatique</li>
+                                    <li>Réseau Socket Contrôleur / Serveur / Client pour le contrôle à distance</li>
+                                    <li>Interface graphique ("Tkinter")</li>
+                                    <li>Gestion de fichier / Diffusion de musique</li>
+                                    <li>Multi-threading</li>
+                                </ul>
+                            </section>
+
+                            <section>
+                                <h3>« MC Command Editor »</h3>
+
+                                <p class="tab"><b>Application "d’Environnement de Développement" pour un langage de type fonctionnel ("MCFunction")</b></p>
+
+                                <ul class="tab">
+                                    <li>Analyseur lexicale et syntaxique (Lexer / Parser)</li>
+                                    <li>Interface graphique : Éditeur de texte avec style et débogage</li>
+                                    <li>Gestion de fichier / projet, avec explorer intégré</li>
+                                </ul>
+                            </section>
+
+                            <section>
+                                <h3 class="italic">Sans Nom</h3>
+
+                                <p class="tab"><b>Logiciel pour récupérer les réponses des participants à un Blind-Test en diffusion live sur YouTube et comptabiliser les points</b></p>
+                                <ul class="tab">
+                                    <li>Analyseur orthographique (Ignorer les fautes de frappes)</li>
+                                    <li>Utilisation de l’API YouTube pour récupérer les messages tchat</li>
+                                    <li>Interface graphique retransmise au présentateur</li>
+                                </ul>
+                            </section>
+
+                        </fieldset>
+
+                    </section>
 
                     <section id="contact">
 
@@ -236,8 +237,7 @@
 
                             <legend>Contactez moi !</legend>
 
-                            <!--TODO-->
-                            <form>
+                            <form action="https://formspree.io/f/mqazrpzv" method="POST">
 
                                 <div id="contact-name">
                                     <input type="text" id="name" name="name" class="contact-input" placeholder=" "/>
@@ -253,6 +253,8 @@
                                     <textarea id="msg" name="message" class="contact-input" placeholder=" "></textarea>
                                     <label for="msg">Message</label>
                                 </div>
+
+                                <!--TODO ADD BUTTON-->
 
                             </form>
 

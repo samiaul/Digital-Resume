@@ -2,27 +2,21 @@
 // Menu Radiobuttons
 
 const input_studies = document.getElementById('input-studies');
-const input_projects = document.getElementById('input-projects');
 const input_experiences = document.getElementById('input-experiences');
 const input_other = document.getElementById('input-other');
 
 const section_studies = document.getElementById('studies');
-const section_projects = document.getElementById('projects');
 const section_experiences = document.getElementById('experiences');
 const section_other = document.getElementById('other');
 
 function resetButtons() {
     section_studies.style.display = 'none';
-    section_projects.style.display = 'none';
     section_experiences.style.display = 'none';
     section_other.style.display = 'none';
 }
 
 input_studies.addEventListener('change', function () {
     if (input_studies.checked) {resetButtons(); section_studies.style.display = 'block'}});
-
-input_projects.addEventListener('change', function () {
-    if (input_projects.checked) {resetButtons(); section_projects.style.display = 'block'}});
 
 input_experiences.addEventListener('change', function () {
     if (input_experiences.checked) {resetButtons(); section_experiences.style.display = 'block';}});

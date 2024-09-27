@@ -29,6 +29,6 @@
 
     @keyframes hide-sidebar {
         from {position: absolute; left: 0}
-        to {position: absolute; left: -78%}
+        to {position: absolute; left: -78%; height: 100%}
     }
 }
