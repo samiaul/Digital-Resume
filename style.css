@@ -17,6 +17,7 @@ body {
 }
 
 #content {
+
     display: grid;
     grid-template-columns: 20% auto;
 }
@@ -151,8 +152,8 @@ body {
 #sidebar-button #show {display: none}
 #sidebar-button:hover {background: #445f7c}
 
-/*.animated {animation: hide-sidebar 2s forwards;}*/
-/*.reversed {animation: hide-sidebar 2s reverse;}*/
+.animated {animation: hide-sidebar 2s forwards;}
+.reversed {animation: hide-sidebar 2s reverse;}
 
 @keyframes hide-sidebar {
     from {position: relative; left: 0}
@@ -209,6 +210,8 @@ nav a:visited {color: #729fcf}
 nav a:hover {color: #445f7c}
 
 main {
+
+    min-width: 500px;
 
     box-shadow: 5px 0 10px #445f7c;
 

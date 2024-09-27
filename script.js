@@ -1,5 +1,5 @@
 
-/*Menu Radiobuttons*/
+// Menu Radiobuttons
 
 const input_studies = document.getElementById('input-studies');
 const input_projects = document.getElementById('input-projects');
@@ -31,14 +31,14 @@ input_other.addEventListener('change', function () {
     if (input_other.checked) {resetButtons(); section_other.style.display = 'block'}});
 
 
-/*Sidebar Show/Hide animation*/
+// Sidebar Show/Hide animation
 
 const sidebar_button = document.getElementById('sidebar-button-input');
 const sidebar_show = document.getElementById('show');
 const sidebar_hide = document.getElementById('hide');
 const sidebar = document.getElementById('sidebar');
 
-function toggleAnimation(reverse= false) {
+function toggleAnimation(reverse) {
 
     sidebar.classList.remove('animated', 'reversed');
 
@@ -53,3 +53,14 @@ function toggleAnimation(reverse= false) {
 
 sidebar_button.addEventListener('change', function () {
     toggleAnimation(sidebar_button.checked)});
+
+
+// Hide when screen is small
+
+function handleSmallScreen(e) {toggleAnimation(!e.matches)}
+
+const mediaQuery = window.matchMedia('(max-width: 600px)');
+
+mediaQuery.addEventListener('change', handleSmallScreen);
+
+handleSmallScreen(mediaQuery);
