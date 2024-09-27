@@ -127,7 +127,7 @@ main > section {
     border: 3px solid #445f7c;
     border-radius: 20px;
 
-    box-shadow: 5px 5px 7px #445f7c;
+    box-shadow: 5px 5px 7px #2d3f52;
 
     background: linear-gradient(0deg, #e2ebf5 0%, #f0f5fa 100%);
 }
@@ -180,7 +180,9 @@ main > section {
     border: 3px solid #445f7c;
     border-radius: 20px;
     background-color: #f0f5fa;
+    box-shadow: 5px 5px 7px #2d3f52;
 }
+
 #contact fieldset legend {
     color: #f0f5fa;
     font-weight: bold;
@@ -236,6 +238,20 @@ main > section {
 #contact-name {grid-row: 1; grid-column: 1}
 #contact-mail {grid-row: 1; grid-column: 2}
 #contact-msg {grid-row: 2; grid-column-start: 1; grid-column-end: 3}
+
+footer {
+    background-color: #f0f5fa;
+    color: #729fcf;
+    text-align: center;
+    font-size: 0.7em;
+    padding: 10px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
 
 /*TODO*/
 @keyframes hide-sidebar {
