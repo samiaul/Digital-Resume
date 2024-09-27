@@ -1,4 +1,9 @@
 
+.font-size-title {font-size: 5vw}
+.font-size-subtitle {font-size: 3vw}
+.font-size-nav {font-size: 1.4vw}
+
+.font-size-profil-buttons {font-size: 1.2vw}
 
 .italic {font-style: italic}
 .tab {padding-left: 2%}
@@ -218,3 +223,26 @@ footer {
 footer p {margin: 0}
 
 footer a {color: #729fcf}
+
+
+@media screen and (max-width: 600px) {
+
+    .font-size-title {font-size: 2em}
+    .font-size-subtitle {font-size: 1.6em}
+
+    .font-size-sidebar {font-size: 0.8em}
+
+    #body {display: block}
+
+    #content {
+        position: absolute;
+        top: 0; left: 0;
+        z-index: 1}
+
+    nav {display: none}
+
+    #contact-mail {grid-row: 2; grid-column: 1}
+    #contact-msg {grid-row: 3; grid-column-end: 1}
+
+}
+

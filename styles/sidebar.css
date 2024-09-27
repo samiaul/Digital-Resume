@@ -1,4 +1,6 @@
 
+.font-size-sidebar {font-size: 1em}
+
 
 #sidebar {
 
@@ -124,3 +126,17 @@
 
 #sidebar-button #show {display: none}
 #sidebar-button:hover {background: #445f7c}
+
+
+@media screen and (max-width: 600px) {
+    .font-size-profil-buttons {font-size: 0.85em}
+
+    #sidebar {
+        position: absolute;
+        top: 0; left: 0;
+        z-index: 2;
+        width: 80%;
+    }
+
+    #sidebar-button {right: -10%}
+}
