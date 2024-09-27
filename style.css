@@ -34,16 +34,21 @@ body {
     padding: 5% 5% 40% 5%;
 
     box-shadow: 2px 2px 10px #445f7c;
+}
 
-    /*animation-name: hide-sidebar;*/
-    /*animation-duration: 3s;*/
-    /*animation-fill-mode: forwards*/
+.animated {animation: hide-sidebar 2s forwards;}
+.reversed {animation: hide-sidebar 2s reverse;}
+
+@keyframes hide-sidebar {
+    from {position: relative; left: 0}
+    to {position: relative; left: -90%}
 }
 
 #scrolling-container {
     position: sticky;
     top: 0;
     padding-top: 5%;
+    padding-right: 8%;
     display: flex;
     flex-direction: column;
 }
@@ -126,11 +131,6 @@ body {
 
 #sidebar-button #show {display: none}
 #sidebar-button:hover {background: #445f7c}
-
-#sidebar-button input:not(:checked) ~ #show {display: block}
-#sidebar-button input:not(:checked) ~ #hide {display: none}
-#sidebar-button input:checked ~ #show {display: none}
-#sidebar-button input:checked ~ #hide {display: block}
 
 header {
     grid-column: 2;
@@ -270,6 +270,16 @@ main > section {
     border-radius: 12px;
     padding-left: 15px;
     padding-right: 15px;
+
+    animation: buzz 10s infinite;
+}
+
+@keyframes buzz {
+    5% {rotate: 0deg}
+    10% {rotate: -4deg}
+    15% {rotate: 4deg}
+    20% {rotate: -4deg}
+    25% {rotate: 0deg}
 }
 
 #contact form {
@@ -328,13 +338,6 @@ footer p {
     margin: 0;
 }
 
-
-
-/*TODO*/
-@keyframes hide-sidebar {
-    from {position: relative; left: 0}
-    to {position: relative; left: -120%}
-}
 
 /*TODO*/
 @media screen and (max-width: 767px) {}
