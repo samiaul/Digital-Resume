@@ -373,6 +373,8 @@ footer p {
     .font-size-title {font-size: 2em}
     .font-size-subtitle {font-size: 1.6em}
 
+    .font-size-profil-buttons {font-size: 0.2em}
+
     nav {display: none}
 }
 
@@ -381,20 +383,24 @@ footer p {
     #contact-mail {grid-row: 1}
     #contact-msg {grid-row: 2}
 
-    .font-size-title {font-size: 3em}
-    .font-size-subtitle {font-size: 1.7em}
-    .font-size-nav {font-size: 0.7em}
+    .font-size-title {font-size: 5vw}
+    .font-size-subtitle {font-size: 3vw}
+    .font-size-nav {font-size: 1.4vw}
 
     .font-size-sidebar {font-size: 0.7em}
+
+    .font-size-profil-buttons {font-size: 0.5em}
 }
 
 @media screen and (min-width: 963px) {
 
-    .font-size-title {font-size: 5em}
-    .font-size-subtitle {font-size: 3em}
-    .font-size-nav {font-size: 1em}
+    .font-size-title {font-size: 6vw}
+    .font-size-subtitle {font-size: 3.5vw}
+    .font-size-nav {font-size: 1.4vw}
 
     .font-size-sidebar {font-size: 1em}
+
+    .font-size-profil-buttons {font-size: 1.5em}
 }
 
 
