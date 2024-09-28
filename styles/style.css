@@ -1,7 +1,6 @@
 
 .font-size-title {font-size: 5vw}
 .font-size-subtitle {font-size: 3vw}
-.font-size-nav {font-size: 1.4vw}
 
 .font-size-profile-buttons {font-size: 1.2vw}
 
@@ -14,18 +13,12 @@ mark {background-color: inherit}
 /* ~~~ BODY ~~~ */
 
 body {
-
     font-family: "Montserrat", system-ui;
     background-color: #f0f5fa;
-
-    padding: 1%;
-    margin: 0;
+    padding: 1%; margin: 0;
 }
 
-#body {
-    display: flex;
-    flex-direction: row;
-}
+#body {display: flex; flex-direction: row}
 
 
 /* ~~~ CONTENT ~~~ */
@@ -36,18 +29,15 @@ body {
 /* -- HEADER -- */
 
 header {
-
     display: flex;
-
-    padding: 10px;
-
     background-color: #f0f5fa;
+    padding: 10px;
 }
 
 header #title {
-    margin: auto;
+    width: 80%;
     text-align: center;
-    width: 80%
+    margin: auto;
 }
 
 header #title h1 {margin: 0}
@@ -58,39 +48,33 @@ header mark {color: #729fcf}
 /* NAV */
 
 nav {
+    display: flex; flex-direction: column;
+    font-size: 1.4vw;
     margin: auto;
-    display: flex;
-    flex-direction: column;
 }
 
 nav menu {padding: 0}
 
 nav li {
-    color: #445f7c;
-    font-size: 1.5em;
-    padding: 6% 0 0 15px;
-
+    color: #445f7c; font-size: 1.5em;
+    padding: 6% 0 0 1vw;
 }
 
 nav a {
-    color: #729fcf;
-    font-weight: bold;
-    text-decoration: none;
-    position: relative;
-    left: -10px;
+    color: #729fcf; font-weight: bold; text-decoration: none;
+    position: relative; left: -10%;
 }
 
 nav a:visited {color: #729fcf}
 nav a:hover {color: #445f7c}
 nav a:active {color: #2d3f52}
 
+
 /* -- FOOTER -- */
 
 footer {
+    color: #729fcf; font-size: 0.7em; text-align: center;
     background-color: #f0f5fa;
-    color: #729fcf;
-    text-align: center;
-    font-size: 0.7em;
     padding: 10px;
 }
 
@@ -100,8 +84,7 @@ footer a {color: #729fcf}
 
 footer div {
     display: inline-block;
-    padding-left: 10px;
-    margin: auto;
+    padding-left: 10px; margin: auto;
 }
 
 footer img {
@@ -109,30 +92,21 @@ footer img {
     padding: 10px;
 }
 
+
 /* ~~~ RESPONSIVENESS ~~~ */
 
 @media screen and (max-width: 600px) {
 
+    /* FONT SIZES */
+
     .font-size-title {font-size: 2em}
     .font-size-subtitle {font-size: 1.6em}
 
-    .font-size-sidebar {font-size: 0.8em}
+    /* MISC */
 
     #body {display: block}
-
-    #content {
-        position: absolute;
-        top: 0; left: 0;
-        z-index: 1}
+    #content {position: absolute; top: 0; left: 0; z-index: 1}
 
     nav {display: none}
-
-    #contact form {grid-template-columns: auto min-content}
-    #contact-name {grid-row: 1; grid-column: 1; grid-column-end: 3}
-    #contact-mail {grid-row: 2; grid-column: 1; grid-column-end: 3}
-    #contact-msg {grid-row: 3; grid-column: 1}
-    #contact-button {grid-row: 3; grid-column: 2}
-
-    #contact-button img {width: 120%; height: 120%}
 }
 
