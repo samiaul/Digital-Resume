@@ -240,6 +240,23 @@ main > section {
     top: 20%;
 }
 
+.contact-input {
+
+    width: 100%;
+
+    border: 0;
+    border-bottom: 1px solid #729fcf;
+
+    background-color: #f0f5fa;
+    font-family: inherit
+}
+
+.contact-input:focus {outline:none}
+
+.contact-input:focus + label {animation-name: contact-label-move-up}
+.contact-input:not(:focus) + label {animation-name: contact-label-move-down}
+.contact-input:not(:placeholder-shown) + label {animation-name: contact-label-move-up;}
+
 #contact-button {
 
     width: 5vw; height: 5vw;
@@ -253,22 +270,6 @@ main > section {
     margin: 10%;
     cursor: pointer;
 }
-
-.contact-input {
-
-    width: 100%;
-
-    border: 0;
-    border-bottom: 1px solid #729fcf;
-
-    background-color: #f0f5fa}
-
-.contact-input:focus {outline:none!important}
-
-.contact-input:focus + label {animation-name: contact-label-move-up}
-.contact-input:not(:focus) + label {animation-name: contact-label-move-down}
-.contact-input:not(:placeholder-shown) + label {animation-name: contact-label-move-up;}
-
 #contact-button:hover > img {filter: brightness(90%)}
 #contact-button:active > img {filter: brightness(75%)}
 
