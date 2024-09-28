@@ -256,8 +256,7 @@ main > section {
     border: 0;
     border-bottom: 1px solid #729fcf;
 
-    background-color: #f0f5fa;
-}
+    background-color: #f0f5fa}
 
 .contact-input:focus {outline:none!important}
 
@@ -307,8 +306,10 @@ footer a {color: #729fcf}
 
     nav {display: none}
 
+    #contact form {grid-template-columns: auto}
     #contact-mail {grid-row: 2; grid-column: 1}
-    #contact-msg {grid-row: 3; grid-column-end: 1}
-
+    #contact-msg {grid-row: 3; grid-column: 1}
+    #contact-button {grid-row: 4; grid-column: 1}
+    #contact-button img {width: 100%; height: 100%}
 }
 
