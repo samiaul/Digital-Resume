@@ -64,7 +64,7 @@ main > section {
     font-size: 1em;
 }
 
-#profile > section {padding: 5px 50px 5px 50px;}
+#profile > section {padding: 10px 50px 5px 50px;}
 
 #profile h3 {
     font-weight: normal;
