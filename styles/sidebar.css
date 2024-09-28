@@ -128,6 +128,11 @@
 #sidebar-button:hover {background: #445f7c}
 #sidebar-button:active {background: #2d3f52}
 
+#sidebar-button input:not(:checked) ~ #sidebar-show-icon {display: block}
+#sidebar-button input:not(:checked) ~ #sidebar-hide-icon {display: none}
+
+#sidebar-button input:checked ~ #sidebar-show-icon {display: none}
+#sidebar-button input:checked ~#sidebar-hide-icon {display: block}
 
 @media screen and (max-width: 600px) {
     .font-size-profile-buttons {font-size: 0.85em}

@@ -30,8 +30,6 @@ input_other.addEventListener('change',  ()=>{
 // Sidebar Show/Hide animation
 
 const sidebar_button = document.getElementById('sidebar-button-input');
-const sidebar_show_icon = document.getElementById('sidebar-show-icon');
-const sidebar_hide_icon = document.getElementById('sidebar-hide-icon');
 const sidebar = document.getElementById('sidebar');
 
 // Run the corresponding animation
@@ -40,21 +38,12 @@ function toggleAnimation(checked) {
     // Remove both animations
     sidebar.classList.remove('animated', 'reversed');
 
-    // Hide both icons
-    sidebar_hide_icon.style.display = 'none';
-    sidebar_show_icon.style.display = 'none';
-
     // This force reset its animations property
     void sidebar.offsetWidth;
 
     // Add animation & show icon
-    if (checked) {
-        sidebar.classList.add('reversed');
-        sidebar_hide_icon.style.display = 'block'
-    }
-    else {
-        sidebar.classList.add('animated');
-        sidebar_show_icon.style.display = 'block'}
+    if (checked) {sidebar.classList.add('reversed')}
+    else {sidebar.classList.add('animated')}
 }
 
 // Set listener
