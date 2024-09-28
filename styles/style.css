@@ -10,7 +10,8 @@
 
 mark {background-color: inherit}
 
-/* BODY */
+
+/* ~~~ BODY ~~~ */
 
 body {
 
@@ -26,11 +27,13 @@ body {
     flex-direction: row;
 }
 
-/* CONTENT */
+
+/* ~~~ CONTENT ~~~ */
 
 #content {flex: 1 1}
 
-/* HEADER */
+
+/* -- HEADER -- */
 
 header {
 
@@ -50,6 +53,9 @@ header #title {
 header #title h1 {margin: 0}
 header #title h2 {margin: 0}
 header mark {color: #729fcf}
+
+
+/* NAV */
 
 nav {
     margin: auto;
@@ -76,8 +82,10 @@ nav a {
 
 nav a:visited {color: #729fcf}
 nav a:hover {color: #445f7c}
+nav a:active {color: #2d3f52}
 
-/* MAIN */
+
+/* -- MAIN -- */
 
 main {
 
@@ -98,6 +106,9 @@ main {
 main > section {
     margin-bottom: 50px;
 }
+
+
+/* PROFIL */
 
 #profil {
 
@@ -132,6 +143,7 @@ main > section {
 #label-other{border-top-right-radius: 15px}
 
 #profil-menu label:hover {background-color: #2d3f52}
+#profil-menu label:active {background-color: #243342}
 
 #profil-menu input:checked ~ label {
     color: #729fcf;
@@ -153,6 +165,9 @@ main > section {
 #experiences {display: none}
 #other {display: none}
 
+
+/* DEV PROJECTS */
+
 #dev-projects fieldset {
     border: 3px solid #445f7c;
     border-radius: 20px;
@@ -172,6 +187,15 @@ main > section {
 
     text-align: center;
 }
+
+#dev-projects h3 {
+    font-weight: normal;
+    font-size: 18px;
+    color: #729fcf;
+}
+
+
+/* CONTACT FORM */
 
 #contact fieldset {
     border: 3px solid #445f7c;
@@ -198,15 +222,31 @@ main > section {
     display: grid;
     grid-gap: 15px;;
     padding-top: 20px;
+    grid-template-columns: auto auto min-content;
+    color: #445f7c;
 }
 
-#contact label {
+#contact div label {
     color: #729fcf;
     position: relative;
     bottom: 55%;
     animation-duration: 1s;
     animation-fill-mode: forwards;
     cursor: text;
+}
+
+#contact-button {
+
+    width: 5vw; height: 5vw;
+    margin: auto;
+
+    cursor: pointer;
+}
+
+#contact-button img {
+    width: 70%; height: 70%;
+    margin: 10%;
+    cursor: pointer;
 }
 
 .contact-input {
@@ -225,11 +265,16 @@ main > section {
 .contact-input:not(:focus) + label {animation-name: contact-label-move-down}
 .contact-input:not(:placeholder-shown) + label {animation-name: contact-label-move-up;}
 
-#contact-name {grid-row: 1; grid-column: 1}
-#contact-mail {grid-row: 1; grid-column: 2}
-#contact-msg {grid-row: 2; grid-column-start: 1; grid-column-end: 3}
+#contact-button:hover > img {filter: brightness(90%)}
+#contact-button:active > img {filter: brightness(75%)}
 
-/* FOOTER */
+#contact-name {grid-row: 1; grid-column: 1}
+#contact-mail {grid-row: 1; grid-column: 2; grid-column-end: 4}
+#contact-msg {grid-row: 2; grid-column-start: 1; grid-column-end: 3}
+#contact-button {grid-row: 2; grid-column: 3}
+
+
+/* -- FOOTER -- */
 
 footer {
     background-color: #f0f5fa;
@@ -243,6 +288,8 @@ footer p {margin: 0}
 
 footer a {color: #729fcf}
 
+
+/* ~~~ RESPONSIVENESS ~~~ */
 
 @media screen and (max-width: 600px) {
 

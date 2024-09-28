@@ -6,7 +6,7 @@
 
     flex-basis: 0 100%;
 
-    width: 20%;
+    width: 20%; height: auto;
 
     background: linear-gradient(0deg, #2d3f52 0%, #729fcf 15%);
     color: white;
@@ -114,18 +114,19 @@
     margin: 10% 0 10% 0;
 }
 
-#sidebar-button #hide {
+#sidebar-button #sidebar-hide-icon {
     margin-right: auto;
     margin-left: 0;
 }
 
-#sidebar-button #show {
+#sidebar-button #sidebar-show-icon {
     margin-right: 0;
     margin-left: auto;
 }
 
-#sidebar-button #show {display: none}
+#sidebar-button #sidebar-show-icon {display: none}
 #sidebar-button:hover {background: #445f7c}
+#sidebar-button:active {background: #2d3f52}
 
 
 @media screen and (max-width: 600px) {

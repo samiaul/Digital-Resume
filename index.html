@@ -58,11 +58,10 @@
                         </ul>
                     </section>
 
-                    <label id="sidebar-button">
+                    <label id="sidebar-button" tabindex="0">
                         <input type="checkbox" id="sidebar-button-input" checked>
-
-                        <img id="show" src="media/show.png" alt="show icon"/>
-                        <img id="hide" src="media/hide.png" alt="hide icon"/>
+                        <img id="sidebar-show-icon" src="media/show.png" alt="show icon"/>
+                        <img id="sidebar-hide-icon" src="media/hide.png" alt="hide icon"/>
                     </label>
 
                 </div>
@@ -96,17 +95,17 @@
 
                             <div>
                                 <input type="radio" id="input-studies" name="profil-menu" value="studies" checked hidden/>
-                                <label for="input-studies" id="label-studies">Études</label>
+                                <label for="input-studies" id="label-studies" tabindex="0">Études</label>
                             </div>
 
                             <div>
                                 <input type="radio" id="input-experiences" name="profil-menu" value="experiences" hidden/>
-                                <label for="input-experiences" id="label-experiences">Expériences Professionnelles</label>
+                                <label for="input-experiences" id="label-experiences" tabindex="0">Expériences Professionnelles</label>
                             </div>
 
                             <div>
                                 <input type="radio" id="input-other" name="profil-menu" value="other" hidden/>
-                                <label for="input-other" id="label-other">Autres Expériences</label>
+                                <label for="input-other" id="label-other" tabindex="0">Autres Expériences</label>
                             </div>
 
                         </div>
@@ -187,7 +186,7 @@
 
                         <fieldset>
 
-                            <legend>Mes projets majeurs</legend>
+                            <legend>Mes Projets Majeurs</legend>
 
                             <section>
                                 <h3>« eMusicPlayer »</h3>
@@ -235,26 +234,29 @@
 
                         <fieldset>
 
-                            <legend>Contactez moi !</legend>
+                            <legend>Contactez Moi !</legend>
 
                             <form action="https://formspree.io/f/mqazrpzv" method="POST">
 
                                 <div id="contact-name">
-                                    <input type="text" id="name" name="name" class="contact-input" placeholder=" "/>
+                                    <input type="text" id="name" name="name" class="contact-input" placeholder=" " required/>
                                     <label for="name">Nom</label>
                                 </div>
 
                                 <div id="contact-mail">
-                                    <input type="email" id="mail" name="email" class="contact-input" placeholder=" "/>
+                                    <input type="email" id="mail" name="email" class="contact-input" placeholder=" " required/>
                                     <label for="mail">E-mail</label>
                                 </div>
 
                                 <div id="contact-msg">
-                                    <textarea id="msg" name="message" class="contact-input" placeholder=" "></textarea>
+                                    <textarea id="msg" name="message" class="contact-input" placeholder=" " required></textarea>
                                     <label for="msg">Message</label>
                                 </div>
 
-                                <!--TODO ADD BUTTON-->
+                                <label id="contact-button" tabindex="0">
+                                    <button type="submit" id="submit-button" hidden></button>
+                                    <img id="send" src="media/mail.png" alt="send icon"/>
+                                </label>
 
                             </form>
 
