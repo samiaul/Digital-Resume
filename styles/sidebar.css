@@ -31,7 +31,7 @@
 
 /* SIDEBAR CONTENT */
 
-#profil-pic {
+#profile-pic {
 
     max-width: 90%;
 
@@ -130,7 +130,7 @@
 
 
 @media screen and (max-width: 600px) {
-    .font-size-profil-buttons {font-size: 0.85em}
+    .font-size-profile-buttons {font-size: 0.85em}
 
     #sidebar {
         position: absolute;

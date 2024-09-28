@@ -3,7 +3,7 @@
 .font-size-subtitle {font-size: 3vw}
 .font-size-nav {font-size: 1.4vw}
 
-.font-size-profil-buttons {font-size: 1.2vw}
+.font-size-profile-buttons {font-size: 1.2vw}
 
 .italic {font-style: italic}
 .tab {padding-left: 2%}
@@ -108,9 +108,9 @@ main > section {
 }
 
 
-/* PROFIL */
+/* PROFILE */
 
-#profil {
+#profile {
 
     border: 3px solid #445f7c;
     border-radius: 20px;
@@ -120,11 +120,11 @@ main > section {
     background: linear-gradient(0deg, #e2ebf5 0%, #f0f5fa 100%);
 }
 
-#profil-menu {display: flex}
+#profile-menu {display: flex}
 
-#profil-menu div {flex: 1}
+#profile-menu div {flex: 1}
 
-#profil-menu label {
+#profile-menu label {
 
     color: #f0f5fa;
     display: inline-block;
@@ -142,25 +142,25 @@ main > section {
 #label-studies{border-top-left-radius: 15px}
 #label-other{border-top-right-radius: 15px}
 
-#profil-menu label:hover {background-color: #2d3f52}
-#profil-menu label:active {background-color: #243342}
+#profile-menu label:hover {background-color: #2d3f52}
+#profile-menu label:active {background-color: #243342}
 
-#profil-menu input:checked ~ label {
+#profile-menu input:checked ~ label {
     color: #729fcf;
     background-color: #f0f5fa;
     font-weight: bold;
     font-size: 1em;
 }
 
-#profil > section {padding: 5px 50px 5px 50px;}
+#profile > section {padding: 5px 50px 5px 50px;}
 
-#profil h3 {
+#profile h3 {
     font-weight: normal;
     font-size: 18px;
     color: #729fcf;
 }
 
-#profil mark {font-weight: bold}
+#profile mark {font-weight: bold}
 
 #experiences {display: none}
 #other {display: none}

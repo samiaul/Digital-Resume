@@ -9,13 +9,14 @@ const section_studies = document.getElementById('studies');
 const section_experiences = document.getElementById('experiences');
 const section_other = document.getElementById('other');
 
-//
+// Hide all sections
 function resetButtons() {
     section_studies.style.display = 'none';
     section_experiences.style.display = 'none';
     section_other.style.display = 'none';
 }
 
+// If button is pressed -> hide all sections and show selected section
 input_studies.addEventListener('change',  () => {
     if (input_studies.checked) {resetButtons(); section_studies.style.display = 'block'}});
 
@@ -33,7 +34,8 @@ const sidebar_show_icon = document.getElementById('sidebar-show-icon');
 const sidebar_hide_icon = document.getElementById('sidebar-hide-icon');
 const sidebar = document.getElementById('sidebar');
 
-function toggleAnimation(reverse) {
+// Run the corresponding animation
+function toggleAnimation(checked) {
 
     // Remove both animations
     sidebar.classList.remove('animated', 'reversed');
@@ -46,7 +48,7 @@ function toggleAnimation(reverse) {
     void sidebar.offsetWidth;
 
     // Add animation & show icon
-    if (reverse) {
+    if (checked) {
         sidebar.classList.add('reversed');
         sidebar_hide_icon.style.display = 'block'
     }
@@ -59,21 +61,23 @@ function toggleAnimation(reverse) {
 sidebar_button.addEventListener('change',()=> {toggleAnimation(sidebar_button.checked)});
 
 
-// Hide when screen is small
+// Responsiveness
+const mediaQuery = window.matchMedia('(max-width: 600px)');
 
+// Hide sidebar when screen is small
 function handleSmallScreen(e) {
     if (e.matches) {sidebar_button.checked = false; toggleAnimation(false)}
 }
-
-const mediaQuery = window.matchMedia('(max-width: 600px)');
-
+// Event listener
 mediaQuery.addEventListener('change', handleSmallScreen);
 
+// Init at page loading
 handleSmallScreen(mediaQuery);
 
 
 // Accessibility
 
+// Activate the element if the corresponding label is focused and 'enter' is pressed
 function clickOnEvent(event, element) {if (event.key === 'Enter') {element.click()}}
 
 // Submit button
